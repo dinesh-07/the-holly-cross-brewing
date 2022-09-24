@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Holy Cross Brewing Society</title>
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/621f5aeaaf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./img/logo.jpeg" alt="logo" /></a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a id="" href="#">Cafe Menu</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="cover">
+        <div class="main-inscription">
+          <p class="title">The Holy Cross Brewing Society</p>
+          <p class="desc">Frankfurt’s multi roaster coffeeshop</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 1000px"></div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log('OK');
+        } else {
+          $('.nav').removeClass('affix');
+        }
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
