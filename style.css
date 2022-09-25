@@ -16,7 +16,6 @@ body {
   background-image: url('img/bg.jpg');
   background-position: center;
   background-size: cover;
-  background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
 .nav {
   width: 100%;
