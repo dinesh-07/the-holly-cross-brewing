@@ -16,7 +16,7 @@ body {
   background-image: url('img/bg.jpg');
   background-position: center;
   background-size: cover;
-  /*background: rgba(194, 194, 197, 0.75); */
+  background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
 .nav {
   width: 100%;
@@ -449,4 +449,19 @@ body {
   .panel:nth-of-type(5) {
     display: none;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
